@@ -31,7 +31,7 @@
                 <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 truncate">{{ $project->name }}</h1>
                 <p class="text-gray-600 mt-1 text-sm sm:text-base">{{ config('app.name') }} - External Dashboard</p>
             </div>
-            <div class="flex items-center space-x-3 sm:space-x-4 flex-shrink-0">
+            <div class="flex items-center space-x-3 sm:space-x-4 shrink-0">
                 <!-- Refresh Button -->
                 <button wire:click="refreshData" wire:loading.attr="disabled"
                     class="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white px-3 sm:px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center space-x-1 sm:space-x-2">
@@ -98,7 +98,7 @@
                             </p>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
-                            <div class="bg-gradient-to-r {{ $projectStats['progress_percentage'] >= 100 ? 'from-green-400 to-green-600' : ($projectStats['progress_percentage'] >= 75 ? 'from-blue-400 to-blue-600' : ($projectStats['progress_percentage'] >= 50 ? 'from-yellow-400 to-yellow-600' : 'from-gray-400 to-gray-600')) }} h-2 rounded-full transition-all duration-300"
+                            <div class="bg-linear-to-r {{ $projectStats['progress_percentage'] >= 100 ? 'from-green-400 to-green-600' : ($projectStats['progress_percentage'] >= 75 ? 'from-blue-400 to-blue-600' : ($projectStats['progress_percentage'] >= 50 ? 'from-yellow-400 to-yellow-600' : 'from-gray-400 to-gray-600')) }} h-2 rounded-full transition-all duration-300"
                                 style="width: {{ min($projectStats['progress_percentage'] ?? 0, 100) }}%"></div>
                         </div>
                     </div>
@@ -371,7 +371,7 @@
                                                 <p class="text-sm text-gray-600 font-mono">{{ $ticket->uuid }}</p>
                                             </div>
                                             <span
-                                                class="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium text-white flex-shrink-0"
+                                                class="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium text-white shrink-0"
                                                 style="background-color: {{ $ticket->status->color ?? '#6B7280' }}">
                                                 {{ $ticket->status->name ?? 'Unknown' }}
                                             </span>
@@ -445,7 +445,7 @@
                                 @foreach ($this->recentActivities as $activity)
                                     <div
                                         class="flex items-start space-x-3 p-3 hover:bg-gray-50 rounded-lg transition-colors duration-150">
-                                        <div class="flex-shrink-0">
+                                        <div class="shrink-0">
                                             <div
                                                 class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
                                                 <svg class="w-4 h-4 text-gray-600" fill="none"
@@ -478,7 +478,7 @@
                                 @foreach ($this->recentActivities as $activity)
                                     <div class="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
                                         <div class="flex items-start space-x-3">
-                                            <div class="flex-shrink-0">
+                                            <div class="shrink-0">
                                                 <div
                                                     class="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center">
                                                     <svg class="w-3 h-3 text-gray-600" fill="none"

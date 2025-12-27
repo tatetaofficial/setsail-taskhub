@@ -5,9 +5,29 @@ use App\Livewire\ExternalLogin;
 use App\Livewire\ExternalDashboard;
 use App\Http\Controllers\Auth\GoogleController;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::name('landing.')->group(function () {
+
+    Route::get('/', fn() => view('landing.pages.home.home'))
+        ->name('home');
+
+    Route::get('/programs', fn() => view('landing.pages.programs.programs'))
+        ->name('programs');
+
+    Route::get('/startup-teams', fn() => view('landing.pages.project.startup'))
+        ->name('startup-teams');
+
+    Route::get('/family-business', fn() => view('landing.pages.stream.business'))
+        ->name('family-business');
+
+    Route::get('/news', fn () => view('landing.pages.blog.list'))
+        ->name('news.list');
+
+    Route::get('/news/{slug}', fn ($slug) =>
+        view('landing.pages.blog.details', compact('slug'))
+    )->name('news.show');
+
 });
+
 
 // Google Authentication Routes
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
