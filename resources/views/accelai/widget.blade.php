@@ -26,7 +26,7 @@
     id="accel-ai-nudge"
     class="
         fixed z-40
-        bottom-10 right-6
+        bottom-30 right-6
         sm:bottom-32 sm:right-6
 
         max-w-[220px]
