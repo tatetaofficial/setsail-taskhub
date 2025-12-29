@@ -13,6 +13,7 @@ return [
     |
     */
 
+
     'defaults' => [
         'guard' => env('AUTH_GUARD', 'web'),
         'passwords' => env('AUTH_PASSWORD_BROKER', 'users'),
@@ -112,4 +113,12 @@ return [
 
     'password_timeout' => env('AUTH_PASSWORD_TIMEOUT', 10800),
 
+
+    /*
+
+    */
+    'allowed_email_domains' => [
+        'president.ac.id',
+        'samastanuswantara.com',
+    ],
 ];

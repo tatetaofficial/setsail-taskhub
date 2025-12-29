@@ -17,7 +17,9 @@ class ExternalLogin extends Component
         $this->token = $token;
         
         if (Session::get('external_authenticated_' . $token)) {
-            return redirect()->route('external.dashboard', $token);
+            // return redirect()->route('external.dashboard', $token);
+            return redirect()->route('external.dashboard', ['token' => $token]);
+
         }
 
         $externalAccess = ExternalAccess::where('access_token', $token)
