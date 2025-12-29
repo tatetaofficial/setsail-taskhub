@@ -62,11 +62,15 @@
             Join Now
         </a>
 
-        <button onclick="toggleMobileMenu()"
-                class="lg:hidden w-11 h-11 rounded-xl bg-linear-to-br from-gray-50 to-gray-100
-                       shadow-md border border-gray-200/50">
-            ☰
-        </button>
+        <button
+    id="mobile-menu-toggle"
+    onclick="toggleMobileMenu()"
+    class="lg:hidden w-11 h-11 rounded-xl bg-linear-to-br from-gray-50 to-gray-100
+           shadow-md border border-gray-200/50
+           text-xl font-bold flex items-center justify-center transition-all duration-300">
+    ☰
+</button>
+
     </div>
 </header>
 
@@ -107,53 +111,38 @@
 
 
 <script>
-    function toggleMobileMenu() {
-        const mobileMenu = document.getElementById('mobile-menu');
-        const bar1 = document.getElementById('bar-1');
-        const bar2 = document.getElementById('bar-2');
-        const bar3 = document.getElementById('bar-3');
-        const button = document.getElementById('mobile-menu-button');
+   function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const toggleBtn = document.getElementById('mobile-menu-toggle');
+    if (!mobileMenu || !toggleBtn) return;
 
-        const isOpen = mobileMenu.classList.contains('scale-100');
+    const isOpen = mobileMenu.classList.contains('scale-100');
 
-        if (!isOpen) {
-            // Open menu
-            mobileMenu.classList.remove('scale-95', 'opacity-0', 'pointer-events-none');
-            mobileMenu.classList.add('scale-100', 'opacity-100', 'pointer-events-auto');
+    if (!isOpen) {
+        // OPEN
+        mobileMenu.classList.remove('scale-95', 'opacity-0', 'pointer-events-none');
+        mobileMenu.classList.add('scale-100', 'opacity-100', 'pointer-events-auto');
 
-            // Animate hamburger
-            bar1.style.transform = 'translateY(6px) rotate(45deg)';
-            bar2.style.transform = 'scaleX(0)';
-            bar2.style.opacity = '0';
-            bar3.style.transform = 'translateY(-6px) rotate(-45deg)';
-
-            button.setAttribute('aria-expanded', 'true');
-            document.body.style.overflow = 'hidden';
-        } else {
-            closeMobileMenu();
-        }
+        toggleBtn.textContent = '✕';
+        document.body.style.overflow = 'hidden';
+    } else {
+        closeMobileMenu();
     }
+}
 
-    function closeMobileMenu() {
-        const mobileMenu = document.getElementById('mobile-menu');
-        const bar1 = document.getElementById('bar-1');
-        const bar2 = document.getElementById('bar-2');
-        const bar3 = document.getElementById('bar-3');
-        const button = document.getElementById('mobile-menu-button');
 
-        // Close menu
-        mobileMenu.classList.add('scale-95', 'opacity-0', 'pointer-events-none');
-        mobileMenu.classList.remove('scale-100', 'opacity-100', 'pointer-events-auto');
+function closeMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const toggleBtn = document.getElementById('mobile-menu-toggle');
+    if (!mobileMenu || !toggleBtn) return;
 
-        // Reset hamburger
-        bar1.style.transform = 'translateY(0) rotate(0)';
-        bar2.style.transform = 'scaleX(1)';
-        bar2.style.opacity = '1';
-        bar3.style.transform = 'translateY(0) rotate(0)';
+    mobileMenu.classList.add('scale-95', 'opacity-0', 'pointer-events-none');
+    mobileMenu.classList.remove('scale-100', 'opacity-100', 'pointer-events-auto');
 
-        if (button) button.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-    }
+    toggleBtn.textContent = '☰';
+    document.body.style.overflow = '';
+}
+
 
     // Close mobile menu on escape key
     document.addEventListener('keydown', function (e) {
