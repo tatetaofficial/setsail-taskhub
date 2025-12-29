@@ -1,0 +1,22 @@
+{
+  "what_is_setsail": {
+    "q": "What is SetSail BizAccel?",
+    "a": "SetSail BizAccel is a business acceleration and incubation platform under President University that supports students in developing startups and business ideas."
+  },
+  "who_can_join": {
+    "q": "Who can join SetSail BizAccel?",
+    "a": "SetSail BizAccel is primarily open to President University students who are interested in entrepreneurship and startup development."
+  },
+  "program_cost": {
+    "q": "Do I need to pay to join the program?",
+    "a": "Most SetSail BizAccel programs are supported by the university and can be joined without any participation fee, subject to selection."
+  },
+  "startup_type": {
+    "q": "Is SetSail BizAccel only for tech startups?",
+    "a": "No. SetSail BizAccel supports various types of businesses including technology, creative industries, social enterprises, culinary, and tourism startups."
+  },
+  "how_to_join": {
+    "q": "How do I join SetSail BizAccel?",
+    "a": "You can join by registering through the official SetSail BizAccel platform and applying to available programs during the registration period."
+  }
+}
