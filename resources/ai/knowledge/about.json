@@ -1,0 +1,78 @@
+{
+  "platform": {
+    "name": "SetSail BizAccel",
+    "type": "University-Based Business Accelerator",
+    "organization": "President University",
+    "description": "SetSail BizAccel is the official business accelerator of President University. It serves as a university-based incubation and acceleration platform designed to build an entrepreneurial ecosystem for students."
+  },
+
+  "vision": {
+    "statement": "Building an entrepreneurial ecosystem for the next generation of innovators.",
+    "focus": [
+      "Student entrepreneurship",
+      "Startup creation during university life",
+      "Sustainable business development"
+    ]
+  },
+
+  "mission": {
+    "statement": "Empowering tomorrow’s leaders by transforming students into entrepreneurs.",
+    "details": [
+      "Encouraging students to build companies while studying",
+      "Embedding entrepreneurship programs into the university curriculum",
+      "Changing students’ mindset from job seekers to business creators"
+    ]
+  },
+
+  "recognition": {
+    "achievement": "#1 in the World for Entrepreneurial Spirit",
+    "ranking": "WURI Ranking",
+    "institution": "President University",
+    "note": "Recognized globally for excellence in entrepreneurial education"
+  },
+
+  "facilities": {
+    "coworking_space": {
+      "capacity": 30,
+      "features": [
+        "High-performance PCs",
+        "Entrepreneurship workspace",
+        "Collaborative environment"
+      ]
+    },
+    "workshop_space": {
+      "capacity": 50,
+      "usage": [
+        "Entrepreneurship workshops",
+        "Bootcamps",
+        "Startup events"
+      ]
+    },
+    "technology_support": [
+      "Photography studio",
+      "3D modeling devices",
+      "Prototype development tools"
+    ]
+  },
+
+  "support_system": {
+    "mentorship": [
+      "Business practitioners",
+      "Alumni entrepreneurs",
+      "Local and international incubators"
+    ],
+    "investment_access": [
+      "Investor connections",
+      "Funding opportunities",
+      "Startup scaling support"
+    ]
+  },
+
+  "target_audience": {
+    "primary": "President University students",
+    "secondary": [
+      "Early-stage student startups",
+      "Aspiring student entrepreneurs"
+    ]
+  },
+}

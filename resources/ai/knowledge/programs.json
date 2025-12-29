@@ -1,0 +1,18 @@
+{
+  "ready_setsail": {
+    "q": "What is Ready SetSail?",
+    "a": "Ready SetSail is an incubation program designed to help students transform business ideas into structured and market-ready startups through mentoring and workshops."
+  },
+  "bootcamp": {
+    "q": "What is the Entrepreneurship Bootcamp?",
+    "a": "The Entrepreneurship Bootcamp is an intensive program focusing on business fundamentals, idea validation, and startup pitching."
+  },
+  "demo_day": {
+    "q": "What is Demo Day?",
+    "a": "Demo Day is a presentation event where startups showcase their progress and pitch their business ideas to mentors, judges, and stakeholders."
+  },
+  "mentoring": {
+    "q": "Is mentoring provided in the programs?",
+    "a": "Yes. Participants receive mentoring from lecturers, industry practitioners, and startup mentors throughout the program."
+  }
+}

@@ -40,4 +40,9 @@ return [
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
         'redirect' => env('APP_URL') . '/auth/google/callback',
     ],
+
+    'gemini' => [
+        'key' => env('GEMINI_API_KEY'),
+        'model' => 'models/gemini-2.5-flash',
+    ],
 ];
