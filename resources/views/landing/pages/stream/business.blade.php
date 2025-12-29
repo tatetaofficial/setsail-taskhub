@@ -9,11 +9,12 @@
         <div class="absolute top-10 right-10 w-72 h-72 hero-accent-blue rounded-full blur-3xl opacity-20"></div>
         <div class="absolute bottom-10 left-10 w-80 h-80 hero-accent-red rounded-full blur-3xl opacity-20"></div>
         <div
-            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-blue-100 rounded-full blur-3xl opacity-30">
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-blue-100 rounded-full blur-3xl opacity-30">
         </div>
 
         <div class="max-w-7xl mx-auto relative z-10">
-            <div class="text-center">
+            <div class="flex flex-col items-center text-center">
+                <!-- Badge -->
                 <div
                     class="inline-flex items-center gap-2 mb-6 px-5 py-2.5 bg-linear-to-r from-brand-blue-500 to-brand-red-500 text-white rounded-full shadow-lg">
                     <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -24,21 +25,30 @@
                         LEGACY & INNOVATION
                     </span>
                 </div>
-                <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold mb-6 leading-tight text-gray-900">
-                    Center for <span class="relative inline-block">
+
+                <!-- Title -->
+                <h1
+                    class="max-w-5xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold mb-6 leading-tight text-gray-900">
+                    Center for
+                    <span class="relative inline-block">
                         <span class="text-gradient">Humane Entrepreneurship</span>
-                        <div
-                            class="absolute -bottom-2 left-0 right-0 h-1 bg-linear-to-r from-brand-blue-600 via-brand-red-500 to-brand-blue-600 rounded-full">
-                        </div>
-                    </span><br>
-                    <span class="text-gradient">& Family Business</span>
+                        <span
+                            class="absolute -bottom-2 left-0 w-full h-1 bg-linear-to-r from-brand-blue-600 via-brand-red-500 to-brand-blue-600 rounded-full">
+                        </span>
+                    </span>
+                    <span class="block mt-2 text-gradient">
+                        & Family Business
+                    </span>
                 </h1>
-                <p class="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-10 leading-relaxed">
+
+                <!-- Subtitle -->
+                <p class="text-lg sm:text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                     President University
                 </p>
             </div>
         </div>
     </section>
+
 
     <!-- Welcome Section -->
     <section class="py-20 lg:py-28 px-6 lg:px-10 bg-white">
@@ -62,12 +72,14 @@
                     </p>
                     <div class="flex items-center space-x-4 mt-8">
                         <div class="w-12 h-0.5 bg-linear-to-r from-brand-blue-700 to-brand-red-600"></div>
-                        <span class="text-sm font-semibold text-gray-500 tracking-wide">ETHICS, INCLUSION & PROSPERITY</span>
+                        <span class="text-sm font-semibold text-gray-500 tracking-wide">ETHICS, INCLUSION &
+                            PROSPERITY</span>
                     </div>
                 </div>
 
                 <div class="relative">
-                    <div class="bg-linear-to-br from-brand-red-50 to-white p-10 rounded-3xl shadow-custom border border-gray-100">
+                    <div
+                        class="bg-linear-to-br from-brand-red-50 to-white p-10 rounded-3xl shadow-custom border border-gray-100">
                         <div
                             class="inline-flex items-center justify-center w-20 h-20 bg-linear-to-br from-brand-red-500 to-brand-red-600 rounded-2xl mb-6 shadow-lg">
                             <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,7 +134,8 @@
                 <!-- GenNext Insight Lab -->
                 <div class="bg-white rounded-3xl shadow-custom border border-gray-100 overflow-hidden">
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
-                        <div class="lg:col-span-1 bg-linear-to-br from-brand-blue-500 to-brand-blue-600 p-10 lg:p-12 flex flex-col justify-center">
+                        <div
+                            class="lg:col-span-1 bg-linear-to-br from-brand-blue-500 to-brand-blue-600 p-10 lg:p-12 flex flex-col justify-center">
                             <div class="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-xl mb-6">
                                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -191,7 +204,8 @@
                 <!-- GenNext Family Enterprise Incubation -->
                 <div class="bg-white rounded-3xl shadow-custom border border-gray-100 overflow-hidden">
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
-                        <div class="lg:col-span-1 bg-linear-to-br from-brand-red-500 to-brand-red-600 p-10 lg:p-12 flex flex-col justify-center order-2 lg:order-1">
+                        <div
+                            class="lg:col-span-1 bg-linear-to-br from-brand-red-500 to-brand-red-600 p-10 lg:p-12 flex flex-col justify-center order-2 lg:order-1">
                             <div class="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-xl mb-6">
                                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -252,7 +266,8 @@
                 <!-- GenNext Clinic & Advocacy Hub -->
                 <div class="bg-white rounded-3xl shadow-custom border border-gray-100 overflow-hidden">
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
-                        <div class="lg:col-span-1 bg-linear-to-br from-purple-500 to-purple-600 p-10 lg:p-12 flex flex-col justify-center">
+                        <div
+                            class="lg:col-span-1 bg-linear-to-br from-purple-500 to-purple-600 p-10 lg:p-12 flex flex-col justify-center">
                             <div class="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-xl mb-6">
                                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -321,7 +336,8 @@
 
             <!-- Synergy Statement -->
             <div class="mt-16 text-center">
-                <div class="max-w-4xl mx-auto bg-linear-to-r from-brand-blue-50 to-brand-red-50 p-8 rounded-2xl border border-gray-200">
+                <div
+                    class="max-w-4xl mx-auto bg-linear-to-r from-brand-blue-50 to-brand-red-50 p-8 rounded-2xl border border-gray-200">
                     <svg class="w-12 h-12 text-brand-blue-600 mx-auto mb-4" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -329,7 +345,8 @@
                     </svg>
                     <p class="text-lg text-gray-700 leading-relaxed italic">
                         "Ketiga aktivitas ini secara sinergis mendukung pengembangan riset, inovasi, kapasitas SDM, serta
-                        kolaborasi strategis bagi pelaku dan komunitas bisnis keluarga di lingkungan Universitas Presiden dan
+                        kolaborasi strategis bagi pelaku dan komunitas bisnis keluarga di lingkungan Universitas Presiden
+                        dan
                         mitra eksternal."
                     </p>
                 </div>
@@ -355,12 +372,14 @@
                 <div
                     class="bg-linear-to-br from-white to-gray-50 p-10 lg:p-12 rounded-3xl shadow-custom border border-gray-100">
                     <div class="flex flex-col md:flex-row items-center gap-8">
-                        <div class="w-48 h-48 rounded-2xl shrink-0 overflow-hidden bg-linear-to-br from-brand-blue-500 to-brand-blue-700">
+                        <div
+                            class="w-48 h-48 rounded-2xl shrink-0 overflow-hidden bg-linear-to-br from-brand-blue-500 to-brand-blue-700">
                             @if(file_exists(public_path('image/family-business/prof-ki-chan-kim.png')))
                                 <img src="{{ asset('image/family-business/prof-ki-chan-kim.png') }}" alt="Prof. Ki-chan Kim"
                                     class="w-full h-full object-cover">
                             @else
-                                <div class="w-full h-full flex items-center justify-center text-white text-4xl font-display font-bold">
+                                <div
+                                    class="w-full h-full flex items-center justify-center text-white text-4xl font-display font-bold">
                                     KK
                                 </div>
                             @endif
@@ -375,7 +394,8 @@
                             </div>
                             <div class="flex items-center justify-center md:justify-start space-x-4 mt-6">
                                 <div class="w-12 h-0.5 bg-linear-to-r from-brand-blue-700 to-brand-red-600"></div>
-                                <span class="text-sm font-semibold text-gray-500 tracking-wide">INTERNATIONAL LEADERSHIP</span>
+                                <span class="text-sm font-semibold text-gray-500 tracking-wide">INTERNATIONAL
+                                    LEADERSHIP</span>
                             </div>
                         </div>
                     </div>
@@ -396,8 +416,8 @@
                     class="team-card p-8 rounded-2xl shadow-lg border border-gray-100 text-center card-hover w-full max-w-sm">
                     <div class="w-40 rounded-2xl mx-auto mb-5 overflow-hidden">
                         @if(file_exists(public_path('image/family-business/director.png')))
-                            <img src="{{ asset('image/family-business/director.png') }}"
-                                alt="Dr. Anggraeni Permatasari" class="w-full h-full object-cover">
+                            <img src="{{ asset('image/family-business/director.png') }}" alt="Dr. Anggraeni Permatasari"
+                                class="w-full h-full object-cover">
                         @else
                             <div
                                 class="w-full h-full bg-linear-to-br from-brand-red-500 to-brand-red-700 rounded-2xl flex items-center justify-center text-white text-2xl font-display font-bold shadow-lg">
@@ -435,8 +455,8 @@
                 <div class="team-card p-6 rounded-2xl shadow-lg border border-gray-100 text-center card-hover">
                     <div class="w-32 rounded-xl mx-auto mb-4 overflow-hidden">
                         @if(file_exists(public_path('image/family-business/member-2.png')))
-                            <img src="{{ asset('image/family-business/member-2.png') }}"
-                                alt="Dr. Anton Wachidin Widjaja" class="w-full h-full object-cover">
+                            <img src="{{ asset('image/family-business/member-2.png') }}" alt="Dr. Anton Wachidin Widjaja"
+                                class="w-full h-full object-cover">
                         @else
                             <div
                                 class="w-full h-full bg-linear-to-br from-brand-blue-500 to-brand-blue-700 rounded-xl flex items-center justify-center text-white text-xl font-display font-bold">

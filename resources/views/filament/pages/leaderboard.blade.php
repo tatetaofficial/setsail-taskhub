@@ -57,7 +57,7 @@
                                 <!-- Mobile: Rank + User Info -->
                                 <div class="flex items-center gap-3 mb-4">
                                     <!-- Rank Badge -->
-                                    <div class="flex-shrink-0">
+                                    <div class="shrink-0">
                                         <div class="flex items-center justify-center w-10 h-10 rounded-full {{ $this->getRankBadgeColor($entry['rank']) }} font-bold text-sm">
                                             <span class="text-lg">{{ $this->getRankIcon($entry['rank']) }}</span>
                                         </div>
@@ -127,7 +127,7 @@
                                 <!-- Left Side: Rank + User Info -->
                                 <div class="flex items-center gap-4 flex-1 min-w-0">
                                     <!-- Rank Badge -->
-                                    <div class="flex-shrink-0">
+                                    <div class="shrink-0">
                                         <div class="flex items-center justify-center w-12 h-12 rounded-full {{ $this->getRankBadgeColor($entry['rank']) }} font-bold text-lg">
                                             <span class="text-xl">{{ $this->getRankIcon($entry['rank']) }}</span>
                                         </div>
@@ -164,7 +164,7 @@
                                 </div>
                                 
                                 <!-- Right Side: Stats in Horizontal Layout -->
-                                <div class="flex items-center gap-6 flex-shrink-0">
+                                <div class="flex items-center gap-6 shrink-0">
                                     <div class="text-center">
                                         <p class="text-xl font-bold text-gray-900 dark:text-white">
                                             {{ number_format($entry['stats']['tickets_created']) }}

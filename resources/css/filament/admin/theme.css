@@ -2,3 +2,34 @@
 
 @source '../../../../app/Filament/**/*';
 @source '../../../../resources/views/filament/**/*';
+
+
+.fi-simple-layout {
+    background-image: var(--filament-auth-bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* optional: kasih overlay biar card kebaca */
+.fi-simple-layout::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+}
+
+/* pastikan konten di atas overlay */
+.fi-simple-main-ctn,
+.fi-simple-page {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================= */
+/* NON-AUTH PAGES RESET */
+/* ============================= */
+
+.fi-layout {
+    background: none !important;
+}

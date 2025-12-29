@@ -44,7 +44,7 @@
 
         <a href="{{ route('landing.family-business') }}"
            @class([$navBase, 'nav-active text-brand-blue-600' => request()->routeIs('landing.family-business'), $navIdle => !request()->routeIs('landing.family-business')])>
-            Stream
+            Family Business
         </a>
 
         <a href="{{ route('landing.news.list') }}"
@@ -97,7 +97,7 @@
 
         <a href="{{ route('landing.family-business') }}"
            @class([$mobileBase, 'nav-active text-brand-blue-600' => request()->routeIs('landing.family-business'), $mobileIdle => !request()->routeIs('landing.family-business')])
-           onclick="closeMobileMenu()">Stream</a>
+           onclick="closeMobileMenu()">Family Business</a>
 
         <a href="{{ route('landing.news.list') }}"
            @class([$mobileBase, 'nav-active text-brand-blue-600' => request()->routeIs('landing.news.*'), $mobileIdle => !request()->routeIs('landing.news.*')])
